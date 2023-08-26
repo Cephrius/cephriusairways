@@ -1,0 +1,9 @@
+/* fonts.css */
+@font-face {
+    font-family: 'Incompleeta'; /* Choose a suitable name for your font */
+    src: url('../fonts/IncompleetaRegular.woff2') format('woff2'),
+         url('../fonts/IncompleetaRegular.woff') format('woff');
+    /* Include other font formats if necessary */
+    /* Add font-weight and font-style if required */
+  }
+  
