@@ -40,8 +40,9 @@ export default function book() {
         <link rel="icon" href="/e.svg" />  {/* Try to fix the svg image*/}
             {/* Dark Mode Toggle */}
            <nav className='py-2 mb-12 flex justify-end text-3xl lg:text-2xl'>
-          <div className='text-black  dark:text-white ' >
+          <div className='text-black  flex flex-row  dark:text-white ' >
             {/* Pass darkMode and setDarkMode */}
+            Hello There
           <Fade direction='down' duration={1250} damping={0.999}>
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -55,6 +56,7 @@ export default function book() {
 
         <div>
              {/* Create Flight Search Bar */}
+
 
              
         </div>
