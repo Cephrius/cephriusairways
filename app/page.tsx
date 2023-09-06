@@ -79,14 +79,14 @@ export default function Home() {
           <div className='flex flex-row ml-20 mt-[-1px] lg:ml-64 lg:mt-4 space-x-9'>
             <Fade direction='up' damping={1} duration={2120} >
             <div className='lg:text-3xl relative'>
-            <span className='hover:scale-110 transition-all duration-300 group'>
+            <span className='hover:scale-110 transition-all duration-300 group cursor-pointer'>
                 BOOK
                 <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100 '></span>
             </span>
             </div>
 
             <div className='lg:text-3xl relative'>
-              <span className='hover:scale-110 transition-all duration-300 group'>
+              <span className='hover:scale-110 transition-all duration-300 group cursor-pointer'>
                   CHECK IN
                   <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
               </span>
