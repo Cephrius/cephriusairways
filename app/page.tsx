@@ -84,7 +84,7 @@ export default function Home() {
               
                   <span className='hover:scale-110 transition-all duration-300 group'>
                       BOOK
-                      <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100 '></span>
+                      <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-200 group-hover:scale-x-100 '></span>
                   </span>
               
               </Link>
@@ -95,7 +95,7 @@ export default function Home() {
               <Link href={"checkIn"}>
               <span className='hover:scale-110 transition-all duration-300 group'>
                   CHECK IN
-                  <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+                  <span className='absolute rounded-2xl bottom-[-12px] left-0 w-full h-1 bg-black dark:bg-white transform origin-center scale-x-0 transition-transform duration-200 group-hover:scale-x-100'></span>
               </span>
               </Link>
             </div>

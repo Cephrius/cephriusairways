@@ -46,7 +46,7 @@ export default function book() {
                 <ul>
                   <li>
                     <div>
-                      <Fade direction="down" duration={1250} damping={0.999}>
+                      <Fade direction="down" duration={2000} damping={0.999} delay={1500}>
                         <div className=" py-2 mb-12 flex justify-end text-[14px] items-center lg:text-xl  ">
                         <h2 className=" font-Incompleeta flex-1 justify-start"><a href="/">Cephrius Airways</a></h2>
                         <div className="cursor-pointer">
@@ -66,7 +66,7 @@ export default function book() {
           </section>
           {/* Implement Search Bar */}
             
-              <div className="p-32 mt-52- bg-black w-[100] h-[100] rounded-xl ">
+              <div className="p-32 mt-52 bg-black w-[50] h-[50] rounded-2xl ">
 
               </div>
             
