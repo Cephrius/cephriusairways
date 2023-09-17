@@ -26,9 +26,10 @@ export default function book() {
       if (darkMode) {
         document.documentElement.classList.add('dark');
         localStorage.theme = 'dark'; // Save user's preference
+        darkMode ? BsFillSunFill : BsFillMoonFill
       } else {
         document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light'; // Save user's preference
+        localStorage.theme = 'light'; // Save user's preference   
       }
     }, [darkMode]);
   
@@ -36,31 +37,41 @@ export default function book() {
 
 
     return (
-        <main className="min-h-screen p-[55px] items-center justify-between lg:p-24 bg-white transition-all duration-300 dark:bg-black">
+        <main className="min-h-screen p-[55px]  lg:p-24 bg-white transition-all duration-300 dark:bg-black">
+
         <link rel="icon" href="/e.svg" />  {/* Try to fix the svg image*/}
             {/* Dark Mode Toggle */}
-           <nav className='py-2 mb-12 flex justify-end text-3xl lg:text-2xl'>
-          <div className='text-black  flex flex-row  dark:text-white ' >
-            {/* Pass darkMode and setDarkMode */}
-            Hello There
-          <Fade direction='down' duration={1250} damping={0.999}>
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="text-2xl "
-            >
-            <Icons />
-          </button>
-          </Fade> 
-          </div>
-        </nav>
+            <section>
+            <nav className='text-3xl lg:text-2xl dark:text-white  '>
+                <ul>
+                  <li>
+                    <div>
+                      <Fade direction="down" duration={1250} damping={0.999}>
+                        <div className=" py-2 mb-12 flex justify-end text-[14px] items-center lg:text-xl  ">
+                        <h2 className=" font-Incompleeta flex-1 justify-start"><a href="/">Cephrius Airways</a></h2>
+                        <div className="cursor-pointer">
+                                                  </div>
+                        {darkMode ? (
+                          <BsFillSunFill className="cursor-pointer" onClick={() => setDarkMode(!darkMode)} />
+                        ) : (
+                          <BsFillMoonFill className="cursor-pointer" onClick={() => setDarkMode(!darkMode)} />
+                        )}
+                          
+                      </div>
+                    </Fade> 
+                  </div>
+                  </li>
+                </ul>  
+            </nav>
+          </section>
+          {/* Implement Search Bar */}
+            
+              <div className="p-32 mt-52- bg-black w-[100] h-[100] rounded-xl ">
 
-        <div>
-             {/* Create Flight Search Bar */}
+              </div>
+            
 
 
-             
-        </div>
-        
 
         </main>
     
