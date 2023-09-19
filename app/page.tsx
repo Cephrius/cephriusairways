@@ -51,7 +51,7 @@ export default function Home() {
         <nav className='py-2 mb-12 flex justify-end text-3xl lg:text-2xl'>
           <div className='text-black  dark:text-white ' >
             {/* Pass darkMode and setDarkMode */}
-          <Fade direction='down' duration={1250} damping={0.999}>
+          <Fade direction='down' duration={1250} damping={0.999} delay={2100}>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="text-2xl "
@@ -63,11 +63,11 @@ export default function Home() {
         </nav>
         <div className='font-Incompleeta text-black dark:text-white lg:pt-[450px]'>
             <div className='text-[14px] lg:text-6xl flex items-center mt-[170px] lg:mt-[-165px]'>
-          <Fade direction='down' damping={0.999} duration={2100}>
+          <Fade direction='down' damping={0.999} duration={2100} delay={2100}>
               <Image src={ darkMode ? '/whitelogo.png': '/logo.jpg' } width={80} height={80} alt='' className='mr-3' />
           </Fade>
               {/* Use the Image component here */}
-          <Fade direction='down' duration={2130} damping={0.999}>
+          <Fade direction='down' duration={2130} damping={0.999} delay={2100}>
               {Array.from("CEPHRIUS  AIRWAYS").map((char, index) => (
                 <span key={index} className='mr-1 lg:mr-2 '>
                   {char}
@@ -78,7 +78,7 @@ export default function Home() {
           
           
           <div className='flex flex-row ml-20 mt-[-1px] lg:ml-64 lg:mt-4 space-x-9'>
-            <Fade direction='up' damping={1} duration={2120} >
+            <Fade direction='up' damping={1} duration={2120} delay={2100} >
             <div className='lg:text-3xl relative'>
               <Link href={"/book"}>
               

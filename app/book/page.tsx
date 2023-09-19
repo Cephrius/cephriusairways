@@ -1,9 +1,11 @@
 'use client'
-
+import {  Button , Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@nextui-org/react";
 import React from "react"
+import {PiArrowsHorizontalBold} from "react-icons/pi"
 import { Fade } from 'react-awesome-reveal';
 import { useState, useEffect } from 'react'
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'; 
+
 
 
 
@@ -38,7 +40,7 @@ export default function book() {
 
     return (
         <main className="min-h-screen p-[55px]  lg:p-24 bg-white transition-all duration-300 dark:bg-black">
-
+        
         <link rel="icon" href="/e.svg" />  {/* Try to fix the svg image*/}
             {/* Dark Mode Toggle */}
             <section>
@@ -66,11 +68,29 @@ export default function book() {
           </section>
           {/* Implement Search Bar */}
             
-              <div className="p-32 mt-52 bg-black w-[50] h-[50] rounded-2xl ">
+          
+              
+              <div className="mt-[100px] flex flex-1 justify-between dark:text-white font-Incompleeta">
+                <div className="text-5xl">
+                    {/* Origin */}  
+                    <h1>IAH </h1>
+                </div>
+                <div className="flex text-5xl mt-2">
+                  <PiArrowsHorizontalBold />
+                </div>
+                <div className="flex text-5xl">
+                    {/* Destination */}
+                    <h1>ATL</h1>
+                </div>
+                
+               
+                
 
               </div>
-            
-
+            <div className="flex flex-1 justify-between text-center dark:text-white">
+              <div className="font-Incompleeta">Houston, TX</div>
+              <div className="font-Incompleeta">Atlanta, GA</div>
+            </div>
 
 
         </main>
